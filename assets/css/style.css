@@ -64,7 +64,6 @@ li {
     background: var(--menu-background);
     backdrop-filter: blur(10px);
     justify-content: center;
-    padding: 0 10rem;
 }
 
 .menu-content {
@@ -75,6 +74,9 @@ li {
     align-items: center;
 
 }
+
+
+ 
 
 .logo {
     display: flex;
@@ -274,6 +276,7 @@ li {
     gap: 1.5rem;
     display: flex;
     align-items: center;
+    max-width: 23rem;
 }
 
 .logo-service-1 {
@@ -520,7 +523,7 @@ li {
 }
 
 .info-time {
-    padding-top: 28rem;
+    padding-top: 20rem;
     gap: 2rem;
     display: flex;
 }
@@ -532,6 +535,7 @@ li {
     width: 57rem;
     height: 10.3rem;
     border-radius: 10px;
+    margin-bottom: 3em;
     background: var(--red-color);
 }
 
@@ -687,6 +691,17 @@ footer {
     width: 100%;
 }
 
+
+@media (max-width: 1333px) {
+    .infos-content,
+    .menu,
+    .promotions,
+    .work-time,
+    .footer-content {
+        padding: 0 2rem;
+    }
+}
+
 @media (max-width: 1229px) {
     .info-services {
         width: 90rem;
@@ -755,6 +770,9 @@ footer {
     .info-services {
         width: 70rem;
     }
+    .services-h3 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width:905px) {
@@ -763,9 +781,15 @@ footer {
     }
 }
 
-@media (max-width: 855px) {
+@media (max-width: 856px) {
     .time div h2 {
         font-size: 2rem;
+    }
+    .time h2 {
+        font-size: 1.2rem;
+    }
+    .time {
+        margin-bottom: 3em;
     }
 }
 
@@ -775,7 +799,33 @@ footer {
     }
 
     .services-h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .promotion-2 .promo-2 p:nth-child(2) {
+        font-size: 1.8rem;
+    }
+    .promotion-2 .promo-2 p:nth-child(3) {
+        font-size: 1.3rem;
+    }
+
+    .promotion-2 .promo-3 p:nth-child(2) {
+        font-size: 1.6rem;
+    }
+    .promotion-2 .promo-3 p:nth-child(3) {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 805px) {
+    .infos-content h2 {
+        font-size: 4.6rem;
+    }
+    .service-p {
+        font-size: 1.4rem;
+    }
+    .time h2 {
+        font-size: 1.3rem;
+        padding-right: 0.5rem;
     }
 }
 
@@ -790,8 +840,12 @@ footer {
         width: 60rem;
     }
     .services-h3 {
-        font-size: 1.3rem;
-    }   
+        font-size: 1.2rem;
+    }
+
+    .time h2 {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 740px) {
@@ -807,8 +861,86 @@ footer {
     .infos-content h2~p {
         font-size: 1.5rem;
     }
+    .promotion-2 .promo-2 p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .promotion-2 .promo-2 p:nth-child(3) {
+        font-size: 1.2rem;
+    }
+
+    .promotion-2 .promo-3 p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+    .promotion-2 .promo-3 p:nth-child(3) {
+        font-size: 1.2rem;
+    }
 }
 
-@media (max-width:710px) {
+@media (max-width:760px) {
+    .time {
+        position: relative;
+        padding: 9rem 0;
+        align-items: center;
+    }
 
+    .time h2 {
+        position: absolute;
+        align-items: center;
+        top: 5rem;
+    }
+
+    .time p:nth-child(2) {
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    .time p:nth-child(3) {
+        position: absolute;
+        bottom: 3rem;
+    }
+    .menu-footer {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .info-services {
+        bottom: 5rem;
+        width: 55rem;
+        padding: 8rem 0;
+        gap: 1rem;
+    }
+    .services-h3 {
+        font-size: 1rem;
+    }
+    .service-3 .services-h3:nth-child(1) {
+        margin-bottom: 1.8rem;
+    }
+}
+
+@media (max-width: 655px) {
+    .info-services {
+        width: 50rem;
+        align-items: center;
+    }
+   .service-p {
+    font-size: 1rem;
+    }
+    .service-3 .services-h3:nth-child(1) {
+        margin-bottom: 2rem;
+        background: blue;
+    }
+    .promotion-2 .promo-2 p:nth-child(2) {
+        font-size: 1.3rem;
+    }
+    .promotion-2 .promo-2 p:nth-child(3) {
+        font-size: 1.1rem;
+    }
+
+    .promotion-2 .promo-3 p:nth-child(2) {
+        font-size: 1.2rem;
+    }
+    .promotion-2 .promo-3 p:nth-child(3) {
+        font-size: 1.1rem;
+    }
 }
