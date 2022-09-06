@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -51,6 +52,7 @@ li {
 
 .home-content {
     background-image: url(../imgs/Desktop/Banner-home.svg);
+    width: 100%;
     background-size: cover;
     background-position: center center;
 }
@@ -62,6 +64,7 @@ li {
     background: var(--menu-background);
     backdrop-filter: blur(10px);
     justify-content: center;
+    padding: 0 10rem;
 }
 
 .menu-content {
@@ -513,6 +516,7 @@ li {
 
 .work-time {
     background: var(--background-light);
+    height: 100%;
 }
 
 .info-time {
@@ -580,11 +584,6 @@ li {
     color: var(--red-color);
 }
 
-.contact {
-    background: var(--background-light);
-    text-align: center;
-}
-
 .contact-container h2 {
     height: 3.6rem;
     font-weight: 400;
@@ -592,6 +591,7 @@ li {
     line-height: 3.52rem;
     text-transform: uppercase;
     font-family: 'Lilita One';
+    text-align: center;
     color: var(--black-color);
 }
 
@@ -603,5 +603,212 @@ li {
     margin-bottom: 3.2rem;
     font-family: 'Lato';
     color: var(--brown-light-color);
+    text-align: center;
 }
 
+footer {
+    padding: 1rem;
+
+}
+
+.footer-content {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.logo-footer p {
+    height: 3.3rem;
+    font-weight: 400;
+    font-size: 2.9rem;
+    line-height: 3.2rem;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    color: var(--gold-color);
+}
+
+.logo-footer p span {
+    margin-right: 0.5rem;
+    font-weight: 900;
+}
+
+.menu-footer nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-footer nav ul li a {
+    height: 2.6rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+    font-family: 'Lato';
+    color: var(--brown-color);
+}
+
+.social-media-footer {
+    display: flex;
+    gap: 2rem;
+}
+
+.address-content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-container img {
+    border: 1px solid rgba(29, 6, 5, 0.15);
+
+}
+
+.address-content p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(rgba(2, 14, 31, 0.69));
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+}
+
+.address-content p span{
+    font-weight: 700;
+}
+
+footer {
+    width: 100%;
+}
+
+@media (max-width: 1229px) {
+    .info-services {
+        width: 90rem;
+    }
+}
+
+
+@media (max-width: 1115px) {
+    .home-content {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+    .info-services {
+        width: 85rem;
+    }
+}
+
+@media (max-width: 1129px) {
+    .menu-content {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .menu {
+        width: 100%;
+    }
+
+    .menu-content {
+        gap: 1rem;
+    }
+}
+
+@media(max-width: 960px) {
+    .info-services {
+        width: 80rem;
+    }
+    .media-social {
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+    .media-social p:nth-child(1) {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+    .media-social h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .infos-content h2 {
+        font-size: 6rem;
+    }
+
+    .infos-content h2~p {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 912px) {
+    .info-services {
+        width: 70rem;
+    }
+}
+
+@media (max-width:905px) {
+    .nav-bar-1 ul li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 855px) {
+    .time div h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 815px) {
+    .info-services {
+        width: 65rem;
+    }
+
+    .services-h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .logo .heading h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:765px) {
+    .info-services {
+        width: 60rem;
+    }
+    .services-h3 {
+        font-size: 1.3rem;
+    }   
+}
+
+@media (max-width: 740px) {
+    .menu {
+        padding-left: 5rem;
+    }
+    .menu-contact {
+        display: none;
+    }
+    .infos-content h2 {
+        font-size: 5rem;
+    }
+    .infos-content h2~p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:710px) {
+
+}
