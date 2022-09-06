@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-light:#FAF3F2;
+    --brown-color:rgba(29, 6, 5, 0.9);
+    --brown-light-color: rgba(29, 6, 5, 0.69);
+    --gold-color:#F59A1B;
+    --red-color:#F43127;
+    --white-color: #FFFFFF;
+    --black-color:#1D0605E5;
+    --menu-background: rgba(59, 32, 11, 0.05);
+    --box-shandow-color: rgba(179, 155, 132, 0.5);
+    --salmon-color: #FAE2CB;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lilita One', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;
+    height: 50.45rem;
+}
+
+.home-content {
+    background-image: url(../imgs/Desktop/Banner-home.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: 6.4rem;
+    background: var(--menu-background);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    /* margin-left: 12rem; */
+}
+
+.logo .heading {
+    margin-left: 2.95rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.heading h1 {
+    font-size: 2.38rem;
+    height: 3.3rem;
+    line-height: 3.2rem;
+    font-family: 'Lato';
+    color: var(--brown-color);
+}
+
+.heading h1:nth-child(1) {
+    font-weight: 900;
+
+}
+
+.heading h1:nth-child(2) {
+    font-weight: 400;
+}
+
+.vector-logo-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 18%;
+}
+
+.vector-logo-content img:nth-child(1) {
+    width: 29.49px;
+    height: 17.36px;
+}
+
+.vector-logo-content img:nth-child(2) {
+    width: 22.57px;
+    height: 3.45px;
+}
+
+.vector-logo-content img:nth-child(2) {
+    width: 22.65px;
+    height: 6.47px;
+}
+
+.menu-bar {
+    width: 100%;
+    margin-left: 3.9rem;
+}
+
+.menu-bar .nav-bar-1 ul {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.menu-bar .nav-bar-1 ul li {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    height: 2.6rem;
+}
+
+.menu-bar .nav-bar-1 ul li a {
+    color: var(--brown-color);
+    font-family: 'Lato';
+
+}
+
+.menu-bar .nav-bar-1 ul li:nth-child(1) {
+    font-weight: 900;
+}
+
+.menu-contact {
+    width: 95%;
+}
+
+.menu-contact ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-contact ul li {
+    color: var(--white-color);
+}
+
+.menu-contact ul button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold-color);
+    border: none;
+    gap: 0.8rem;
+    padding: 4px 16px 4px 16px;
+    border-radius: 4px;
+}
+
+.menu-contact ul button {
+    cursor: pointer;
+}
+
+
+.menu-contact ul button img {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.home-info {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.infos-content {
+    margin-top: 10rem;
+
+}
+
+.home-info p:nth-child(1) {
+    height: 2.3rem;
+    font-weight: 700;
+    font-size: 2.28rem;
+    line-height: 2.28rem;
+    font-family: 'Lato';
+    color: var(--brown-color);
+
+}
+
+.infos-content h2 {
+    height: 8.6rem;
+    font-weight: 400;
+    font-size: 7.7rem;
+    line-height: 8.5rem;
+    font-family: 'Lilita One';
+    color: var(--brown-color);
+
+}
+
+.infos-content h2 span {
+    color: var(--gold-color);
+}
+
+.infos-content h2~p {
+    height: 3.2rem;
+    font-weight: 400;
+    font-size: 2.28rem;
+    line-height: 3.2rem;
+    font-family: 'Lato';
+    color: var(--brown-light-color);
+}
+
+.infos-content h2~p span {
+    font-weight: 900;
+    border-radius: 3px;
+    padding: 0 2px;
+    background: var(--gold-color);
+}
+
+.infos-content button {
+    font-family: 'Lato';
+    font-weight: 700;
+    line-height: 3.2rem;
+    font-size: 2.2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 10px 20px 10px 20px;
+    gap: 1.2rem;
+    background: var(--red-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+}
+
+.info-services {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:97rem;
+    height: 11.85rem;
+    bottom: 10rem;
+    left: 10rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 40px var(--box-shandow-color);
+    background: var(--white-color);
+}
+
+.info-services .service-1 {
+    margin-left: 1rem;
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo-service-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--salmon-color);
+    border-radius: 50%;
+}
+
+.logo-service-1 img:nth-child(1) {
+    width: 3.1rem;
+    height: 1.5rem;
+}
+
+.logo-service-1 img:nth-child(2) {
+    width: 3.1rem;
+    height: 0.52rem;
+}
+
+.logo-service-1 img:nth-child(3) {
+    width: 3.1rem;
+    height: 0.88rem;
+}
+
+.services-h3 {
+    height: 2.2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: var(--brown-color);
+
+}
+
+.service-p {
+    height: 3.9rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    opacity: 0.6;
+    color: var(--brown-color);
+}
+
+.service-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-2 .logo-service-2 {
+    padding: 15px;
+    border-radius: 55%;
+    background: var(--salmon-color);
+}
+.service-3 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 3rem;
+}
+
+.service-3 .logo-service-3 {
+    padding: 15px;
+    border-radius: 55%;
+    background: var(--salmon-color);
+}
+
+.promotions {
+    background:var(--background-light);
+}
+
+.promotions header{
+    padding-top: 12rem;
+}
+
+.promotions header h3{
+    height: 3.6rem;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.52rem;
+    text-transform: uppercase;
+    color: var(--brown-color);
+}
+
+.promotions header p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-family: 'Lato';
+    margin-bottom: 1rem;
+    color: var(--brown-light-color);
+}
+
+
+.promotion-content {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 2rem;
+    width: 100%;
+    height: 40.3rem;
+}
+
+.promotion-1 {
+    border-radius: 10px;
+}
+
+.promotion-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.promotion-2 {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+}
+
+.promotion-2 .promo-2 {
+    border-radius: 10px;
+}
+
+.promotion-2 .promo-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.promotion-2 .promo-3 {
+    border-radius: 10px;
+}
+
+.promotion-2 .promo-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.work-time {
+    background: var(--background-light);
+}
+
+.info-time {
+    padding-top: 22rem;
+    gap: 2rem;
+    display: flex;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 57rem;
+    height: 10.3rem;
+    border-radius: 10px;
+    background: var(--red-color);
+}
+
+.time img:nth-child(1) {
+    height: 9.4rem;
+    width: 9.4rem;
+    margin-left: 1.5rem;
+}
+
+.time h2 {
+    height: 2.8rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    text-transform: uppercase;
+    color: var(--brown-light-color);
+}
+
+.time p {
+    font-family: 'Lato';
+    font-weight: 700;
+    font: 1.6rem;
+    line-height: 2.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0;
+}
+
+.media-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.media-social p:nth-child(1) {
+    height: 2.6rem;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--brown-light-color);
+}
+
+.media-social h3 {
+    height: 2.9rem;
+    font-family: 'Lilita One';
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    color: var(--red-color);
+}
+
+
