@@ -23,6 +23,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5 {
@@ -343,7 +344,8 @@ li {
 }
 
 .promotions header{
-    padding-top: 12rem;
+    padding-top: 15rem;
+    margin-bottom: 2rem;
 }
 
 .promotions header h3{
@@ -514,7 +516,7 @@ li {
 }
 
 .info-time {
-    padding-top: 22rem;
+    padding-top: 28rem;
     gap: 2rem;
     display: flex;
 }
@@ -578,4 +580,28 @@ li {
     color: var(--red-color);
 }
 
+.contact {
+    background: var(--background-light);
+    text-align: center;
+}
+
+.contact-container h2 {
+    height: 3.6rem;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.52rem;
+    text-transform: uppercase;
+    font-family: 'Lilita One';
+    color: var(--black-color);
+}
+
+.contact-container p {
+    height: 2.3rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 3.2rem;
+    font-family: 'Lato';
+    color: var(--brown-light-color);
+}
 
