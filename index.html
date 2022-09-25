@@ -10,6 +10,8 @@
 </head>
 <body>
     <section class="section home-content">
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close-menu"></label>
         <aside class="menu">
             <div class="menu-content main-content">
                 <div class="logo">
@@ -25,17 +27,15 @@
                 </div>
                 <div class="menu-bar">
                     <nav class="nav-bar-1">
-                        <ul>
+                        <ul onclick="getElementById('close-menu').checked = false;">
                             <li><a href="#">Home</a></li>
                             <li><a href="#promo">Promoção</a></li>
-                            <li><a href="#">Cardapio</a></li>
-                            <li><a href="#">Comentário</a></li>
-                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="#contact">Localização</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="menu-contact">
-                    <ul>
+                    <ul onclick="getElementById('close-menu').checked = false;">
                         <li> <a href=""><img src="./assets/imgs/Desktop/Vector-Ifood.png" alt=""></a></li>
                         <li> <a href=""><img src="./assets/imgs/Desktop/Vector-instagram.png" alt=""></a></li>
                         <li><img src="./assets/imgs/Desktop/Vector-menu-hr.png" alt=""></li>
