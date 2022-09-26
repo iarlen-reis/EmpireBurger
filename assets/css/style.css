@@ -707,6 +707,23 @@ footer {
     width: 100%;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--gold-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--secundary-color);
+    color: var(--primary-color);
+    z-index: 4;
+}
+
 
 @media (max-width: 1333px) {
     .infos-content,
@@ -1211,13 +1228,27 @@ footer {
     }
 }
 
+@media (max-width:375px) {
+    .work-time {
+        padding-top: 40rem;
+    }
+    .time {
+        width: 31rem;
+        left: 4%;
+    }
+    .info-services {
+        width: 30rem;
+        left: 10%;
+    }
+}
+
 @media (max-width:360px) {
     .work-time {
         padding-top: 36rem;
     }
     .time {
         width: 30rem;
-        left: 2%;
+        left: 1%;
     }
     .info-services {
         width: 30rem;

@@ -9,7 +9,7 @@
     <script defer src="./assets/js/index.js"></script>
 </head>
 <body>
-    <section class="section home-content">
+    <section class="section home-content" id="home">
         <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
         <label class="close-menu-label" for="close-menu" title="close-menu"></label>
         <aside class="menu">
@@ -36,8 +36,8 @@
                 </div>
                 <div class="menu-contact">
                     <ul onclick="getElementById('close-menu').checked = false;">
-                        <li> <a href=""><img src="./assets/imgs/Desktop/Vector-Ifood.png" alt=""></a></li>
-                        <li> <a href=""><img src="./assets/imgs/Desktop/Vector-instagram.png" alt=""></a></li>
+                        <li> <a target="_blank" href="https://www.ifood.com.br/"><img src="./assets/imgs/Desktop/Vector-Ifood.png" alt=""></a></li>
+                        <li> <a target="_blank" href="https://www.instagram.com/w3school_com/"><img src="./assets/imgs/Desktop/Vector-instagram.png" alt=""></a></li>
                         <li><img src="./assets/imgs/Desktop/Vector-menu-hr.png" alt=""></li>
                         <button><img src="./assets/imgs/Desktop/Vector-Whatsapp.png" alt="">Contato</button>
                     </ul>
@@ -152,8 +152,8 @@
                 </nav>
             </div>
             <div class="social-media-footer">
-                <a href="#"><img src="./assets/imgs/Desktop/footer-ifood.png" alt=""></a>
-                <a href="#"><img src="./assets/imgs/Desktop/footer-instagram.png" alt=""></a>
+                <a target="_blank" href="https://www.ifood.com.br/"><img src="./assets/imgs/Desktop/footer-ifood.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/w3school_com/"><img src="./assets/imgs/Desktop/footer-instagram.png" alt=""></a>
             </div>
         </div>
     </footer>
@@ -161,5 +161,6 @@
      
         <p><span>2022 © EmpireBurger.</span> Todos os direitos reservados.</p>
     </address>
+    <a href="#home" class="back-to-top">➢</a>
 </body>
 </html>
