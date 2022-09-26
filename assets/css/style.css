@@ -865,12 +865,13 @@ footer {
     }
     .close-menu-label::after {
         content: '≡';
+        
         position: absolute;
         right: 0;
         z-index: 3;
         top: 1rem;
         right: 2rem;
-        background: var(--primary-color);
+        background: var(--brown-light-color);
         color: var(--white-color);
         font-size: 3rem;
         line-height: 3rem;
@@ -880,6 +881,21 @@ footer {
         text-align: center;
         cursor: pointer;
     }
+
+    .close-menu-label::before {
+        position: absolute;
+        content: url(../imgs/Mobile/Coroa-empire.png) ' EMPIRE BURGER';
+        z-index: 3;
+        left: 1rem;
+        top: 1.5rem;
+        color: var(--brown-color);
+        font-size: 2rem;
+
+    }
+    .logo {
+        display: none;
+    }
+
     .close-menu:checked~.menu{
         display: flex;
         align-items: center;
@@ -927,15 +943,12 @@ footer {
     
     .close-menu:checked~.close-menu-label::after {
         content: '×';
+        background: var(--red-color);
     }
     .close-menu {
         display: none;
     }
   
-
-
-
-
     .infos-content h2 {
         font-size: 5rem;
     }
@@ -965,7 +978,7 @@ footer {
         padding-top: 13rem;
     }
     .infos-content {
-        padding-top: 6rem;
+        padding-top: 10rem;
     }
 }
 
@@ -1034,5 +1047,162 @@ footer {
     }
     .promotion-2 .promo-3 p:nth-child(3) {
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width:610px) {
+    .home-content {
+        background-image: url(../imgs/Mobile/Banner\ mobile\ 1.png);
+        height: 100vh;
+        z-index: 3;
+    }
+    .promotion-content.main-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .promotions {
+        z-index: 0;
+        padding-top: 17rem;
+    }
+    .info-services {
+        z-index: 1;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+
+        height: auto;
+        gap: 0;
+        left: 5rem;
+        bottom: -25rem;
+        padding-top: 1rem;
+    }
+    .hr-service {
+        display: none;
+    }
+    .work-time {
+        padding-top: 75rem;
+    } 
+    .info-time .time h2 {
+        font-size: 1.7rem;
+    }
+    .info-time .time p {
+        font-size: 0.8rem;
+
+    }
+}
+
+@media (max-width: 570px) {
+    .info-services {
+        width: 40rem;
+        left: 10%;
+    }
+    .info-time {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .time {
+        width: 52rem;
+    }
+    .work-time {
+        padding-top: 70rem;
+    } 
+}
+
+@media (max-width: 545px) {
+    .time {
+        width: 45rem;
+        left: 3%;
+    }
+    .work-time {
+        padding-top: 65rem;
+    } 
+}
+
+@media (max-width:525px) {
+    .work-time {
+        padding-top: 60rem;
+    } 
+}
+
+@media (max-width:501px) {
+    .time {
+        width: 40rem;
+        left: 4%;
+    }
+}
+
+@media (max-width:480px) {
+    .work-time {
+        padding-top: 55rem;
+    }
+    .media-social {
+        padding-bottom: 2rem;
+    }
+    .contact-container h2+p {
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width:455px) {
+    .time {
+        width: 35rem;
+        left: 4%;
+    }
+    .info-services {
+        width: 35rem;
+        left: 10%;
+    }
+    .work-time {
+        padding-top: 50rem;
+    }
+}
+
+@media (max-width:420px) {
+    .work-time {
+        padding-top: 45rem;
+    }
+}
+
+@media (max-width:400px) {
+    .work-time {
+        padding-top: 42rem;
+    }
+    .time {
+        width: 30rem;
+        left: 10%;
+    }
+    .info-services {
+        width: 35rem;
+        left: 5%;
+    }
+}
+
+@media (max-width:372px) {
+    .work-time {
+        padding-top: 40rem;
+    }
+    .time {
+        width: 31rem;
+        left: 4%;
+    }
+    .info-services {
+        width: 30rem;
+        left: 10%;
+    }
+}
+
+@media (max-width:360px) {
+    .work-time {
+        padding-top: 36rem;
+    }
+    .time {
+        width: 30rem;
+        left: 2%;
+    }
+    .info-services {
+        width: 30rem;
+        left: 7%;
     }
 }
