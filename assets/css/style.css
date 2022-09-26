@@ -171,6 +171,30 @@ li {
     color: var(--white-color);
 }
 
+.nav-bar-1 ul li a {
+    position: relative;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.nav-bar-1 ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    transition: all 300ms ease-in-out;
+    background: var(--red-color);
+}
+
+.nav-bar-1 ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+
+
 .menu-contact ul button {
     display: flex;
     align-items: center;
@@ -273,12 +297,10 @@ li {
     background: var(--white-color);
 }
 
-.info-services .service-1 {
-    margin-left: 1rem;
-    gap: 1.5rem;
+.service-1 {
     display: flex;
     align-items: center;
-    max-width: 23rem;
+    gap: 1.5rem;
 }
 
 .logo-service-1 {
@@ -289,19 +311,10 @@ li {
     border-radius: 50%;
 }
 
-.logo-service-1 img:nth-child(1) {
-    width: 3.1rem;
-    height: 1.5rem;
-}
-
-.logo-service-1 img:nth-child(2) {
-    width: 3.1rem;
-    height: 0.52rem;
-}
-
-.logo-service-1 img:nth-child(3) {
-    width: 3.1rem;
-    height: 0.88rem;
+.service-1 .logo-service-1 {
+    padding: 15px;
+    border-radius: 55%;
+    background: var(--salmon-color);
 }
 
 .services-h3 {
@@ -522,6 +535,7 @@ li {
 .work-time {
     background: var(--background-light);
     height: 100%;
+    padding-top: 3rem;
 }
 
 .info-time {
@@ -1011,9 +1025,10 @@ footer {
 
 @media (max-width: 700px) {
     .info-services {
-        bottom: 5rem;
+        bottom: -10rem;
         width: 55rem;
         padding: 8rem 0;
+        margin-bottom: 2rem;
         gap: 1rem;
     }
     .services-h3 {
@@ -1028,6 +1043,9 @@ footer {
     .info-services {
         width: 50rem;
         align-items: center;
+    }
+    .service-1 {
+        margin-top: 2rem;
     }
    .service-p {
     font-size: 1rem;
