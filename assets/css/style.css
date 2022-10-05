@@ -546,6 +546,7 @@ li {
 
 .time {
     display: flex;
+    position: relative;
     align-items: center;
     gap: 1rem;
     width: 57rem;
@@ -553,6 +554,21 @@ li {
     border-radius: 10px;
     margin-bottom: 3em;
     background: var(--red-color);
+}
+
+.time span::before {
+    position: absolute;
+    content: 'Aberto!';
+    top: -10px;
+    left: -2rem;
+    width: 12rem;
+    text-align: center;
+    background: var(--brown-color);
+    color: var(--white-color);
+    border-radius: 1rem;
+    font-family: '';
+    font-size: 2rem;
+    font-family: 'Lilita One', cursive;
 }
 
 .time img:nth-child(1) {
