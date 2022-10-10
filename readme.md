@@ -3,12 +3,18 @@ Resolução do desafio Empire-burger do BrChallenges
 <p align="center">
     <a href="#objetivo">Objetivo</a> •
     <a href="#tecnologias">Tecnologias</a> • 
-    <a href="#autor">Autor</a>
-    <a href="#funcionalidades">Funcionalidades</a>
 </p>
 <h2 align="center">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/imgs/banner.png"/>
 </h2>
+<p align="center">
+    Essa é uma descrição breve sobre o projeto, você pode informar as
+    seguintes coisas: Pretenção do projeto, Autor e alguns links 
+    importantes.
+    Esse projeto foi um desafio da plataforma <a href="https://www.brchallenges.com/">BrChallenges</a>, onde utilizamos
+    um protótipo figma do autor <a href="https://www.behance.net/tiagofenixe9d9">Tiago Alves</a> como modelo de
+    desenvolvimento.
+</p>
 <h2>Objetivo</h2>
 <h2 id="objetivo">✔️ Objetivo</h2>
 <p>
